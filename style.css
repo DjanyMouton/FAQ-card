@@ -42,32 +42,40 @@ main #image-div #shadow-img {
   position: absolute;
   margin-bottom: -170px;
 }
-main h1 {
+main #text-container {
+  height: 500px;
+}
+main #text-container h1 {
   font-weight: 700;
   margin: 4.5rem 0 2rem 0;
   text-align: center;
   font-family: "Open Sans", sans-serif;
 }
-main .question-container {
+main #text-container .question-container {
   margin: 1rem 1rem;
   padding-bottom: 5px;
   border-bottom: 0.2px solid rgb(193, 193, 193);
 }
-main h3 {
-  font-family: "Open Sans", sans-serif;
-  color: black;
-  cursor: pointer;
-  width: 330px;
+main #text-container h3 {
   display: flex;
+  margin-top: 2rem;
   justify-content: space-between;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: black;
+  width: 330px;
   font-size: 17px;
+  font-family: "Open Sans", sans-serif;
 }
-main .h3-span-arrow img {
+main #text-container .h3-span-arrow .img-arrow {
   margin-left: 5px;
   height: 12px;
   width: 15px;
 }
-main .answer {
+main #text-container .answer {
   margin-top: 3px;
   color: rgb(76, 76, 76);
   font-family: "Open Sans", sans-serif;
