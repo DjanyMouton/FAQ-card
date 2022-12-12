@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 %flex-center{
     display: flex;
@@ -7,24 +7,20 @@
 }
 *{
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
 }
 body{
-    background: rgb(255, 207, 255);
-    margin: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
     width: 100%;
     height: 130vh;
+    box-sizing: border-box;
+    margin: 0;
+    background: rgb(120, 67, 255);
 }
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white;
-    border: 1px solid black;
     border-radius: 10px;
     width: 375px;
     height: 700px;
@@ -47,15 +43,18 @@ main{
     }
     h1{
         font-weight: 700;
-        margin-top: 5rem;
+        margin: 4.5rem 0 2rem 0;
         text-align: center;
+        font-family: 'Open Sans', sans-serif;
     }
     .question-container{
         margin: 1rem 1rem;
-        padding-bottom: 10px;
-        border-bottom: 0.5px solid black;
+        padding-bottom: 5px;
+        border-bottom: 0.2px solid rgb(193, 193, 193);
     }
     h3{
+        font-family: 'Open Sans', sans-serif;
+        color: black;
         cursor: pointer;
         width: 330px;
         display: flex;
@@ -68,6 +67,12 @@ main{
         width: 15px;
     }
     .answer{
+        margin-top: 3px;
+        color: rgb(76, 76, 76);
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        width: 330px;
         display: none;
+        font-size: 13px;
     }
 }
