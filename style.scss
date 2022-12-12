@@ -1,0 +1,34 @@
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+main{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 375px;
+    height: 700px;
+    #image-div{
+        @extend %flex-center;
+        margin-top: -50px;
+        height: 200px;
+        width: 375px;
+        background-size: cover;
+        img{
+            width: 200px;
+        }
+    }
+    h1{
+        text-align: center;
+    }
+}
